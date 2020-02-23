@@ -6,7 +6,7 @@ product_id = product_id.substring(product_id.indexOf('=')+1,product_id.length);
 
 var flag = 0;
 
-url = 'https://price-api.datayuge.com/api/v1/compare/detail?api_key=RZgjPCQKEbqyNFNcIZAjRaYZj8Lp23MpOxS&id='+product_id;
+url = 'https://price-api.datayuge.com/api/v1/compare/detail?api_key=kKbrXmtXJcdalqCpvj7vr9Ntpppt5W4a7zf&id='+product_id;
 var xhr = new XMLHttpRequest();
 xhr.open('GET',url);
 xhr.onreadystatechange = function(){
@@ -63,7 +63,7 @@ xhr.onreadystatechange = function(){
   pagetitle.innerHTML = res_data.data.product_model+"-Product Details";
 
   if(res_data.data.product_category=="mobile"){
-    url2 = 'https://price-api.datayuge.com/api/v1/compare/specs?api_key=RZgjPCQKEbqyNFNcIZAjRaYZj8Lp23MpOxS&id='+product_id;
+    url2 = 'https://price-api.datayuge.com/api/v1/compare/specs?api_key=kKbrXmtXJcdalqCpvj7vr9Ntpppt5W4a7zf&id='+product_id;
     var xhr2 = new XMLHttpRequest();
     xhr2.open('GET',url2);
     xhr2.onreadystatechange = function(){
@@ -244,7 +244,7 @@ xhr.send();
 
 
 //<-------------------------------->
-url1 = 'https://price-api.datayuge.com/api/v1/compare/specs?api_key=RZgjPCQKEbqyNFNcIZAjRaYZj8Lp23MpOxS&id='+product_id;
+url1 = 'https://price-api.datayuge.com/api/v1/compare/specs?api_key=kKbrXmtXJcdalqCpvj7vr9Ntpppt5W4a7zf&id='+product_id;
 var xhr1 = new XMLHttpRequest();
 xhr1.open('GET',url1);
 xhr1.onreadystatechange = function(){
@@ -264,7 +264,7 @@ xhr1.onreadystatechange = function(){
 xhr1.send();
 
 //<------------------------------------------->
-url3 = 'https://price-api.datayuge.com/api/v1/compare/detail?api_key=RZgjPCQKEbqyNFNcIZAjRaYZj8Lp23MpOxS&id='+product_id;
+url3 = 'https://price-api.datayuge.com/api/v1/compare/detail?api_key=kKbrXmtXJcdalqCpvj7vr9Ntpppt5W4a7zf&id='+product_id;
 var xhr3 = new XMLHttpRequest();
 xhr3.open('GET',url3);
 xhr3.onreadystatechange = function(){
