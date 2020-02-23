@@ -3,7 +3,7 @@ var btn = document.getElementById('searchButton');
 var textArea = document.getElementById('output');
 btn.addEventListener('click',findProduct);
 function findProduct(){
-var url="https://price-api.datayuge.com/api/v1/compare/search?api_key=RZgjPCQKEbqyNFNcIZAjRaYZj8Lp23MpOxS&product="+input.value+"&page=1";
+var url="https://price-api.datayuge.com/api/v1/compare/search?api_key=kKbrXmtXJcdalqCpvj7vr9Ntpppt5W4a7zf&product="+input.value+"&page=1";
 var xhr = new XMLHttpRequest();
 xhr.open('GET',url);
 xhr.onreadystatechange = function(){
